@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>mission 6-2</title>
+<style>h1{border-bottom:solid 2px; display:inline;}</style>
+<style>h3{border-bottom:solid 2px; display:inline;}</style>
+<style>
+    #ボタン
+    {
+        border-radius:5px;
+        background-color:lemonchiffon;
+        padding: 5px;
+    }
+</style>
+<style>
+    #btn{
+        border-radius: 5px;
+        background-color:lightblue;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+<!--見出し１-->
+<span style="color:blue"><h1 id="midashi_1">今日は何した？</h1></span><br>
+<br>
+<!--見出し２-->
+<h2 id="midashi_2">「一言」で日記を書いてみよう！</h2>
+<!--時間入力-->
+<button id="ボタン" onclick="datetimeshow()">現在時刻取得</button>
+<!--見出し３-->
+<div id="datetime"><h3 id="midashi_3">↑入力した時間を記録しよう～</h3></span></div><br>
+<!--日記記入-->
+<div id="form_area">
+<input type="text" id="inputform_0" placeholder="フォーム-0"><button id="0" onclick="deleteBtn(this)">削除</button>
+</div>
+<input type="button" value="フォーム追加" onclick="addForm()">
+<link rel="stylesheet" href="mission_6-02.css" type="text/css">
+<br>
+<!--労い-->
+<button id="btn">入力したらクリック</button><br>
+<!--訪問回数-->
+<p>このページへの訪問回数：<span id="sampleOutput"></span></p>
+<div is="formContainer"></div>
+<script src="mission_6-02.js"></script>
+</body>
+</html>
